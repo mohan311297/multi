@@ -1,9 +1,12 @@
-pipeline{
-  agent any
-  stages{
-    stage('build'){
-      sh '''
-      ls -lrt'''
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
     }
-  }
 }
+
